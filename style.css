@@ -1,0 +1,193 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    overflow: hidden;
+    background: url('./blob\ \(2\).svg')
+}
+.switch-btn-diff {
+    position: fixed;
+    top: 10px;
+    right: 50px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px !important;
+    background-color: #000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 34px !important;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    border-radius: 34px !important;
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider{
+    border-radius: 34px !important;  
+}
+  .round {
+    border-radius: 34px !important;  
+}
+  
+
+.mainCard {
+    border-radius: 36px;
+    background: #e0e0e0;
+    box-shadow:  32px 32px 63px #b3b3b3,
+             -32px -32px 63px #ffffff;
+    background: url('./wave.svg');
+    display: flex;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.header {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.heading {
+    font-size: 1.4em;
+}
+.fa-sun {
+    color: #f7df07 !important;
+    font-size: 1.9em;
+    animation: fas-anime 3s linear infinite alternate;
+}
+@keyframes fas-anime {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.6);
+    }
+}
+.weatherDataDiv {
+    border-radius: 64px;
+    background: linear-gradient(45deg, #cacaca, #f0f0f0);
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+    padding: 8px;
+    margin: 8px;
+}
+.fa-house-flood {
+    color: #207af0ea !important;
+    font-size: 1.9em;
+}
+
+.temperature {
+    font-size: 1.9em;
+    /* justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center; */
+}
+
+.timeDiv {
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    color: grey;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.dateTime {
+    font-size: 0.9em;
+}
+@media (max-width: 500px) {
+    .header {
+        display: flex;
+        /* grid-template-columns: repeat(2, 1fr); */
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+    }
+    .heading {
+        font-size: 1.1em;
+    }
+    .fa-sun {
+        color: #f7df07 !important;
+        font-size: 1.5em;
+    }
+    .weatherDataDiv {
+        border-radius: 64px;
+        background: linear-gradient(45deg, #cacaca, #f0f0f0);
+        display: flex;
+        /* grid-template-columns: repeat(1, 1fr); */
+        align-items: center;
+        justify-content: center;
+        /* justify-items: center; */
+        padding: 8px;
+        margin: 8px;
+    }
+    .fa-house-flood {
+        color: #207af0ea !important;
+        font-size: 1.2em;
+    }
+    .temperature {
+        font-size: 1.2em;
+    }
+}

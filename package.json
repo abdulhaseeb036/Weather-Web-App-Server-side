@@ -1,0 +1,15 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather Web App Server side",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Haseeb Alam Rafiq",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
